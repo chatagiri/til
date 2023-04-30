@@ -30,13 +30,16 @@ log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
 ```
 ---
-## 公式ドキュメントを読む
-Mariadbは公式ドキュメントに[ココ](https://mariadb.com/kb/en/configuring-mariadb-connectorc-with-option-files/#option-file-syntax)に書いてあった。
+## ハイフン/アンスコについて記載されている公式ドキュメントを読む
+Mariadbは公式ドキュメントの[ココ](https://mariadb.com/kb/en/configuring-mariadb-connectorc-with-option-files/#option-file-syntax)に書いてあった。
 > Dashes (-) and underscores (_) in options are interchangeable in MariaDB Connector C 3.1.1 and later. In versions before that, options must be specified exactly as they are defined. See CONC-395 for more information.
+ 
+dash(ハイフン)も、アンダースコアも、よほど古いmariadbでは無ければ良しなに互換して解釈してくれるらしい。ので、設定上はどちらを記載しても問題ない。
 
-が、MySQLのドキュメントでsyntaxについて明確に記載されている箇所は見つけられなかった。
+MariaDBのドキュメントが充実している一方、MySQLのドキュメントでsyntaxについて明確に記載されている箇所は見つけられなかった。
 
-一方、mysql/mariadbともに、[my.cnfの設定例ドキュメント](https://mariadb.com/kb/en/mysqld_safe/#configuring-the-open-files-limit)ではアンダースコア繋がりのものが多い。
+## 結局、ハイフンとアンスコどちらを設定すべき?
+[MySQL](https://dev.mysql.com/doc/refman/8.0/ja/option-files.html#option-file-syntax), [MariaDB](https://mariadb.com/kb/en/mysqld_safe/#configuring-the-open-files-limit)ともに、my.cnfの設定例ドキュメントではアンダースコア繋がりで示されている。
 > ```
 > [mysqld_safe]
 > core_file_size=unlimited
