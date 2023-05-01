@@ -1,5 +1,5 @@
 ---
-title: "Hugo(v0.111.3) のtempateで使える変数まとめ"
+title: "Hugo(v0.111.3) のtempateで使える変数まとめをGPT-4にやってもらった"
 date: 2023-05-01T00:00:00+09:00
 # bookComments: false
 # bookSearchExclude: false
@@ -9,7 +9,7 @@ date: 2023-05-01T00:00:00+09:00
 
 | Variables | Description |
 |---|---|
-| `.Site.Al`lPages` `| すべてのページの配列(region問わず)。 |
+| `.Site.AllPages`| すべてのページの配列(region問わず)。 |
 | `.Site.BaseURL` | サイト設定で定義されているサイトの基本URL。 |
 | `.Site.BuildDrafts` | サイト設定で定義されているドラフトをビルドするかどうかを示すブール値（デフォルト: false）。 |
 | `.Site.Copyright` | サイト設定で定義されているウェブサイトの著作権を表す文字列。 |
@@ -28,8 +28,8 @@ date: 2023-05-01T00:00:00+09:00
 | `.Site.Languages` | 言語の順序付けリスト（定義された重みによって順序付け）。 |
 | `.Site.LastChange` | サイトに対する最も最近の変更の日時を表す文字列。この文字列は、コンテンツページのフロントマター内の日付変数に基づいています。 |
 | `.Site.Menus` | サイト内のすべてのメニュー。 |
-| `.Site`.Pages` `| 日付順に並べられたすべてのコンテンツの配列で、最新のものが最初に来ます。この配列には、現在の言語のページのみが含まれます。`.Site.Pages`を参照。 |
-| `.Site.Regula`rPages` `| 通常のページコレクションへのショートカット。`.Site.RegularPages`は、`where .Site.Pages "Kind" "page"`と同等です。`.Site.Pages`を参照。 |
+| `.Site.Pages`| 日付順に並べられたすべてのコンテンツの配列で、最新のものが最初に来ます。この配列には、現在の言語のページのみが含まれます。`.Site.Pages`を参照。 |
+| `.Site.RegularPages`| 通常のページコレクションへのショートカット。`.Site.RegularPages`は、`where .Site.Pages "Kind" "page"`と同等です。`.Site.Pages`を参照。 |
 | `.Site.Sections` | サイトのトップレベルのディレクトリ。 |
 | `.Site.Taxonomies` | サイト全体のタクソノミー。任意のテンプレートからタクソノミーデータにアクセスするセクションも参照。 |
 | `.Site.Title` | サイトのタイトルを表す文字列。 |
