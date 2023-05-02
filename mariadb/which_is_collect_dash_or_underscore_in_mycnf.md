@@ -9,7 +9,6 @@ date: 2023-04-30T00:00:00+09:00
 - ハイフンでもアンスコでもどっちでも良い。
 - mariadb側で良しなに[解釈してくれる](https://mariadb.com/kb/en/configuring-mariadb-connectorc-with-option-files/#option-file-syntax)。
 - 正し、公式docではアンダースコア繋がりで書かれているので、アンダースコアにしておくのが健全そう。
----
 ## my.cnfのキー表記ブレ問題
 mariadbやmysqlの設定ファイル my.cnf を弄っていると、キーがハイフン繋がりだったりアンスコ繋がりだったり、疎らであることが多い。
  
@@ -29,11 +28,10 @@ max_allowed_packet=8M
 log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
 ```
----
 ## ハイフン/アンスコについて記載されている公式ドキュメントを読む
 Mariadbは公式ドキュメントの[ココ](https://mariadb.com/kb/en/configuring-mariadb-connectorc-with-option-files/#option-file-syntax)に書いてあった。
 > Dashes (-) and underscores (_) in options are interchangeable in MariaDB Connector C 3.1.1 and later. In versions before that, options must be specified exactly as they are defined. See CONC-395 for more information.
- 
+
 dash(ハイフン)も、アンダースコアも、よほど古いmariadbでは無ければ良しなに互換して解釈してくれるらしい。ので、設定上はどちらを記載しても問題ない。
 
 MariaDBのドキュメントが充実している一方、MySQLのドキュメントでsyntaxについて明確に記載されている箇所は見つけられなかった。
