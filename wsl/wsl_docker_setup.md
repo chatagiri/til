@@ -8,7 +8,6 @@ date: 2023-05-02T00:00:00+09:00
 # Windows10 + WSL2(fedora)でsystemd管理のDocker環境を作る
 
 ## WSL2をインストールする
----
 - powershellからwsl2 install
 ```console
 @powershell
@@ -18,13 +17,11 @@ PS C:\> wsl --set-default-version 2
 ```
 
 ## 任意のLinux Distributionを入れて初回起動する
----
   - Microsoft Storeで、"wsl + [distribution名]" で検索して、使いたい奴を入れる。
     - fedoraなら "Fedora Remix"を入れると良さそう。
   - 一回起動してユーザ設定を済ませておく。
 
 ## wslをsystemd enableで起動する
----
 
 - wsl.confにsystemd有効化設定を追加する
 ```
@@ -61,7 +58,6 @@ PS C:\> wsl --shutdown
 ```
 
 ## 操作ユーザからdockerコマンドを叩けるようにする
----
 
 - 操作ユーザをdocker groupに追加する
 ```
