@@ -1,8 +1,13 @@
 ---
 title: "my.cnfのキーはアンダースコアとハイフンどちらが正しいのか"
 date: 2023-04-30T00:00:00+09:00
-# bookComments: false
-# bookSearchExclude: false
+categories:
+  - mariadb
+tags:
+  - mariadb
+  - mysql
+bookComments: false
+bookSearchExclude: false
 ---
 # my.cnfのキーはアンダースコアとハイフンどちらが正しいのか?
 ## tl;dr
