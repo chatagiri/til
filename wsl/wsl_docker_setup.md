@@ -1,8 +1,13 @@
 ---
 title: "Windows10 + WSL2(fedora)でsystemd管理のDocker環境を作る"
 date: 2023-05-02T00:00:00+09:00
-# bookComments: false
-# bookSearchExclude: false
+categories:
+  - wsl
+tags:
+  - wsl
+  - docker
+bookComments: false
+bookSearchExclude: false
 ---
 
 # Windows10 + WSL2(fedora)でsystemd管理のDocker環境を作る
