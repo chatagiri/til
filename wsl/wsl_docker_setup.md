@@ -42,7 +42,6 @@ PS C:\> wsl --shutdown
 ```
 
 ## dockerをインストールして起動する
----
 - docker インストール&&再起動時有効化
 ```
 @wsl
