@@ -1,8 +1,12 @@
 ---
 title: "Hugo(v0.111.3) のtempateで使える変数まとめをGPT-4にやってもらった"
 date: 2023-05-01T00:00:00+09:00
-# bookComments: false
-# bookSearchExclude: false
+categories:
+  - hugo
+tags:
+  - hugo
+bookComments: false
+bookSearchExclude: false
 ---
 ## Site variables
 - https://gohugo.io/variables/site/
