@@ -20,6 +20,7 @@ bookSearchExclude: false
 $ docker -v
 Docker version 20.10.23, build %{shortcommit_cli}
 ```
+
 - ansibleが叩ける環境
 ```
 $ ansible --version
