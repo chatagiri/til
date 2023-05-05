@@ -20,6 +20,7 @@ bookSearchExclude: false
 $ docker -v
 Docker version 20.10.23, build %{shortcommit_cli}
 ```
+
 - ansibleが叩ける環境
 ```
 $ ansible --version
@@ -51,7 +52,7 @@ docker:
 
 - コンソールからansible通ること確認
 ```console
-$ ansible -i hosts docker -m file -a "path=/var/tmp/test state=touch" -u root -k -e ansible_python_interpreter=/usr/local/bin/python -e 'ansible_ssh_args="-o ControlMaster=no"'
+$ ansible -i hosts.yml docker -m file -a "path=/var/tmp/test state=touch" -u root -k -e ansible_python_interpreter=/usr/local/bin/python -e 'ansible_ssh_args="-o ControlMaster=no"'
 SSH password: 
 172.17.0.2 | CHANGED => {
     "changed": true,
